@@ -17,9 +17,13 @@ Run migration
     bundle exec rake db:migrate
 
 #Setup facebook and default host site from Refinery admin settings
+
 Auto Facebook access Token: Access token can be created by using FB Graph API Explorer tools.
+
 Auto Facebook page Id : Any page the facebook accound can post to.
+
 Auto Facebook message: Message to display on the facebook post
+
 Auto Facebook host name: host name of your site(e.g. example.com)
 
 

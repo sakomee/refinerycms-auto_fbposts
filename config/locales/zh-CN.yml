@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      auto_fbposts:
+        title: Auto Fbposts
+    auto_fbposts:
+      admin:
+        auto_fbposts:
+          actions:
+            create_new: 建立新的 Auto Fbpost
+            reorder: 对 Auto Fbposts 重新排序
+            reorder_done: 对 Auto Fbposts 的重新排序结束
+          records:
+            title: Auto Fbposts
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Auto Fbposts yet. Click "Add New Auto Fbpost" to add your first auto fbpost.
+            no_items_yet: 目前没有 Auto Fbposts . 点击 "Add New Auto Fbpost" 创建一个auto fbpost.
+          auto_fbpost:
+            view_live_html: 查看 auto fbpost 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 auto fbpost
+            delete: 永久删除 auto fbpost
+      auto_fbposts:
+        show:
+          other: 其他 Auto Fbposts
+  activerecord:
+    attributes:
+      'refinery/auto_fbposts/auto_fbpost':
+        post_facebook: Post Facebook

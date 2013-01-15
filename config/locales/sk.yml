@@ -1,0 +1,27 @@
+sk:
+  refinery:
+    plugins:
+      auto_fbposts:
+        title: Auto Fbposts
+    auto_fbposts:
+      admin:
+        auto_fbposts:
+          actions:
+            create_new: Pridať Auto Fbpost
+            reorder: Preusporiadať Auto Fbposts
+            reorder_done: Koniec radenia Auto Fbposts
+          records:
+            title: Auto Fbposts
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Auto Fbposts. Kliknite na "Pridať Auto Fbpost" pre pridanie prvého auto fbpost.
+          auto_fbpost:
+            view_live_html: Zobraziť náhľad auto fbpost<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť auto fbpost
+            delete: Zmazať auto fbpost
+      auto_fbposts:
+        show:
+          other: Daľšie Auto Fbposts
+  activerecord:
+    attributes:
+      'refinery/auto_fbposts/auto_fbpost':
+        post_facebook: Post Facebook

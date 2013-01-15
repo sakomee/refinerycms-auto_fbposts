@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      auto_fbposts:
+        title: Auto Fbposts
+    auto_fbposts:
+      admin:
+        auto_fbposts:
+          actions:
+            create_new: Lag en ny Auto Fbpost
+            reorder: Endre rekkefølgen på Auto Fbposts
+            reorder_done: Ferdig å endre rekkefølgen Auto Fbposts
+          records:
+            title: Auto Fbposts
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Auto Fbposts enda. Klikk på "Lag en ny Auto Fbpost" for å legge til din første auto fbpost.
+          auto_fbpost:
+            view_live_html: Vis hvordan denne auto fbpost ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne auto fbpost
+            delete: Fjern denne auto fbpost permanent
+      auto_fbposts:
+        show:
+          other: Andre Auto Fbposts
+  activerecord:
+    attributes:
+      'refinery/auto_fbposts/auto_fbpost':
+        post_facebook: Post Facebook

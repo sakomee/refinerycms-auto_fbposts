@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      auto_fbposts:
+        title: Auto Fbposts
+#        article: masculino/femenino
+    auto_fbposts:
+      admin:
+        auto_fbposts:
+          actions:
+            create_new: Crear nuevo auto fbpost
+            reorder: Reordenar auto fbposts
+            reorder_done: Reordenación de auto fbposts completada
+          records:
+            title: Auto Fbposts
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay auto fbposts todavía. Pulsa en "Crear nuevo Auto Fbpost" para crear tu primer auto fbpost.
+          auto_fbpost:
+            view_live_html: Ver este auto fbpost como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este auto fbpost
+            delete: Borrar este auto fbpost para siempre
+      auto_fbposts:
+        show:
+          other: Otros auto fbposts
+  activerecord:
+    attributes:
+      'refinery/auto_fbposts/auto_fbpost':
+        post_facebook: Post Facebook

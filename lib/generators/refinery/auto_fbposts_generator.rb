@@ -19,7 +19,7 @@ module Refinery
    source_root File.expand_path('../../../../', __FILE__)
     
     def Copy_files
-      copy_file 'app/views/admin/blog/posts/_form.html.erb'  
+      copy_file 'app/views/refinery/admin/blog/posts/_form.html.erb'  
       copy_file 'app/models/observers/blog_post_observer.rb'    
       # copy_file File.expand_path('../../../../app/views/admin/blog/posts/_form.html.erb', __FILE__)      
       # copy_file File.expand_path('../../../../app/models/observers/blog_post_observer.rb', __FILE__)  

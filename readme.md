@@ -8,7 +8,7 @@ Add refinerycms-auto_fbposts to your Gemfile
 
 Run generator
 
-    bundle exec rails g refinerycms_auto_fbposts
+    bundle exec rails g refinery:auto_fbposts
 
 *Please check your `config/application.rb` for observer configuration*
 

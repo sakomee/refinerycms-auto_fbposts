@@ -10,11 +10,11 @@ module Refinery
       #   Refinery::Plugin.register do |plugin|
       #     plugin.name = "auto_fbposts"
       #     plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.auto_fbposts_admin_auto_fbposts_path }
-      #     plugin.pathname = root
+      #     plug
       #     plugin.activity = {
       #       :class_name => :'refinery/auto_fbposts/auto_fbpost'
       #     }
-
+       # in.pathname = root
       #   end
       # end
       
@@ -23,10 +23,13 @@ module Refinery
       config.after_initialize do
         
         Refinery.register_extension(Refinery::AutoFbposts)
-        Refinery::Setting.find_or_set(:host_name, 'www.example.com')
-        Refinery::Setting.find_or_set(:auto_facebook_access_token, 'Your facebook token here')
-        Refinery::Setting.find_or_set(:auto_facebook_page, '000000000000000')
-        Refinery::Setting.find_or_set(:auto_facebook_message,
+   
+        Refinery::Setting.find_or_set(:auto_fb_app_id, '')        
+        Refinery::Setting.find_or_set(:auto_fb_application_secret, '')
+        Refinery::Setting.find_or_set(:auto_fb_host_name, 'www.example.com')
+        Refinery::Setting.find_or_set(:auto_fb_access_token, 'Your facebook token here')
+        Refinery::Setting.find_or_set(:auto_fb_page, 'your facebook page ')
+        Refinery::Setting.find_or_set(:auto_fb_message,
           'A new blog post "{title}" is published.')
       end
 

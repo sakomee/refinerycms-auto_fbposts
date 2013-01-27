@@ -16,6 +16,8 @@ Run migration
 
     rake db:migrate
 
+
+
 ### Setup facebook and default host site from Refinery admin settings
 Auto Fb App Id : Create your application in Facebook and write your App Id here. (default:iwaLab_app_id)
 
@@ -30,6 +32,10 @@ Auto Fb message: Message to display on the facebook post
 Auto Fb host name: host name of your site(e.g. example.com)
 
 
+Run rake task to extend token life
+
+    rake refinery:auto_fbposts:extend_token
+
 ### Setup Cron Jobs
 Extend life of facebook access token
 
@@ -41,7 +47,7 @@ By default, access token is valid for 2 hours and extended tolken for 60 days. S
 Setup your cron  job to run following task to post blogs in future
 
 	rake refinery:auto_fbposts:post_to_facebook
-	
+
 
 ### License
 

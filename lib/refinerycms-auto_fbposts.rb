@@ -9,7 +9,7 @@ module RefineryExtension
         Refinery::Core::Engine.routes.default_url_options[:host] = Refinery::Setting.get(:auto_fb_host_name)
         url=Refinery::Core::Engine.routes.url_helpers.blog_post_url(self)
         title=self.title         
-        post_facebook_message(url, title)
+        RefineryExtension::Auto_Fbpost.post_facebook_message(url, title)
         self.facebook_posted = true
         self.post_facebook = false
         self.save 

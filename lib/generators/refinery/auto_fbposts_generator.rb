@@ -24,7 +24,7 @@ module Refinery
     end
 
     def create_initializer_file
-      puts "Updating active_record.observers in application.rb"
+      puts "  Updating active_record.observers in application.rb"
       application "config.active_record.observers = :blog_post_observer"
     end
   end

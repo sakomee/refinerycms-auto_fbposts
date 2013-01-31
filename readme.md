@@ -17,20 +17,12 @@ Run migration
     rake db:migrate
 
 
-
 ### Setup facebook and default host site from Refinery admin settings
-Auto Fb App Id : Create your application in Facebook and write your App Id here. (default:iwaLab_app_id)
-
-Auto Fb Application secret: Application secret from your application. (Default: iwaLab_application secret)
-
-Auto Fb access Token: Access token can be created by using FB Graph API Explorer tools.
-
-Auto Fb page Id : Any page the facebook accound can post to.
-
-Auto Fb message: Message to display on the facebook post
-
-Auto Fb host name: host name of your site(e.g. example.com)
-
+1. Auto Fb App Id : Create your application in Facebook and place your App Id here. (default:iwaLab_app_id)
+2. Auto Fb Application secret: Application secret from your application. (Default: iwaLab_application secret)
+3. Auto Fb access Token: Access token can be created by using [FB Graph API Explorer tools](https://developers.facebook.com/tools/explorer). Note: Make sure you select your application for your token.
+4. Auto Fb message: Message to display on the facebook post
+5. Auto Fb host name: host name of your site(e.g. example.com)
 
 Run rake task to extend token life
 

@@ -1,4 +1,4 @@
-# Auto Facebook Post engine for Refinery CMS.
+## Auto Facebook Post engine for Refinery CMS.
 
 ### Installing
 
